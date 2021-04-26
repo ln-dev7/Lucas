@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        /* CSS de la premiere question */
+        .container1{
+            position: relative;
+            background: #ff0;
+            height: 100vh;
+        }
+        .container1-img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .container1-img:hover{
+            border: blue 3px;
+            border-style: dotted;
+            cursor: pointer;
+        }
+
+        /* CSS de la deuxieme question */
+        .container2{
+            position: relative;
+            background: #f00;
+            height: 100vh;
+            transition: all 1s;
+        }
+        .container2.changeBack{
+            background: #fff;
+        }
+        .container2-button{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            font-size: 20px;
+            font-family: 'arial';
+            font-weight: bold;
+            padding: 10px;
+            color: #f00;
+        }
+        .container2-button.changeButton{
+            background: #f00;
+            color: #fff;
+        }
+        .container2-button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML de la Preniere question -->
+    <div class="container1">
+        <img src="lndev.jpg" alt="image" class="container1-img">
+    </div>
+    <!-- HTML de la Deuxieme question -->
+    <div class="container2">
+        <div class="container2-button">CLIQUE MOI STP</div>
+    </div>
+    <script src="lucas.js"></script>
+</body>
+</html>
